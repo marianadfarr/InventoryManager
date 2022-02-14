@@ -4,8 +4,7 @@ JavaFX application with non persistent data which allows users to create, read, 
 
 Full Task requirements: 
 
-I.  User Interface
-A.  Create a JavaFX application with a graphical user interface (GUI) based on the attached “Software 1 GUI Mock-Up.” You may use JavaFX with or without FXML to create your GUI, or you may use Scene Builder to create your FXML file; use of Swing is not permitted. The user interface (UI) should closely match the organization of the GUI layout and contain all UI components (buttons, text fields, etc.) in each of the following GUI mock-up forms:
+I.  User Interface will consist of:
 1.  Main form
 2.  Add Part form
 3.  Modify Part form
@@ -19,7 +18,7 @@ B.  Provide Javadoc comments for each class member throughout the code, and incl
 
 
 II.  Application
-C.  Create classes with data and logic that map to the UML class diagram and include the supplied Part class provided in the attached “Part.java.” Do not alter the provided class. Include all the classes and members as shown in the UML diagram. Your code should demonstrate the following:
+  Code should demonstrate the following:
 •   inheritance
 •   abstract and concrete classes
 •   instance and static variables
@@ -30,17 +29,17 @@ D.  Add the following functionalities to the Main form:
 •   The Add button under the Parts TableView opens the Add Part form.
 •   The Modify button under the Parts TableView opens the Modify Part form.
 •   The Delete button under the Parts TableView deletes the selected part from the Parts TableView or displays a descriptive error message in the UI or in a dialog box if a part is not deleted.
-•   When the user searches for parts by ID or name (partial or full name) using the text field, the application displays matching results in the Parts TableView. (Including a search button is optional.) If the part or parts are found, the application highlights a single part or filters multiple parts. If the part is not found, the application displays an error message in the UI or in a dialog box.
+•   When the user searches for parts by ID or name (partial or full name) using the text field, the application displays matching results in the Parts TableView. If the part or parts are found, the application highlights a single part or filters multiple parts. If the part is not found, the application displays an error message in the UI or in a dialog box.
 •   If the search field is set to empty, the table should be repopulated with all available parts.
 
 2.  The Products pane
 •   The Add button under the Products TableView opens the Add Product form.
 •   The Modify button under the Products TableView opens the Modify Product form.
 •   The Delete button under the Products TableView deletes the selected product (if appropriate) from the Products TableView or displays a descriptive error message in the UI or in a dialog box if a product is not deleted.
-•   When the user searches for products by ID or name (partial or full name) using the text field, the application displays matching results in the Products TableView. (Including a search button is optional.) If a product or products are found, the application highlights a single product or products or filters multiple products. If a product or products are not found, the application displays an error message in the UI or in a dialog box.
+•   When the user searches for products by ID or name (partial or full name) using the text field, the application displays matching results in the Products TableView.If a product or products are found, the application highlights a single product or products or filters multiple products. If a product or products are not found, the application displays an error message in the UI or in a dialog box.
 •   If the search field is set to empty, the table should be repopulated with all available products.
 
-Note: A product’s associated parts can exist independent of current inventory of parts. You are not required to display sample data upon launching your application. You do not need to save your data to a database or a file; data for this application is nonpersistent and will reside in computer memory while in use.
+Note: You do not need to save your data to a database or a file; data for this application is nonpersistent and will reside in computer memory while in use.
 
 3.  Exit button
 • The Exit button closes the application.

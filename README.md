@@ -3,6 +3,7 @@ JavaFX application with non persistent data which allows users to create, read, 
 
 
 Full Task requirements: 
+
 I.  User Interface
 A.  Create a JavaFX application with a graphical user interface (GUI) based on the attached “Software 1 GUI Mock-Up.” You may use JavaFX with or without FXML to create your GUI, or you may use Scene Builder to create your FXML file; use of Swing is not permitted. The user interface (UI) should closely match the organization of the GUI layout and contain all UI components (buttons, text fields, etc.) in each of the following GUI mock-up forms:
 1.  Main form

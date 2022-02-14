@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFormController">
+   <children>
+      <VBox layoutX="38.0" layoutY="66.0" prefHeight="378.0" prefWidth="337.0">
+         <children>
+            <TableView fx:id="PartsTableView" prefHeight="230.0" prefWidth="381.0">
+              <columns>
+                <TableColumn fx:id="PartIDCol" prefWidth="51.0" text="Part ID" />
+                <TableColumn fx:id="PartNameCol" prefWidth="73.0" text="Part Name" />
+                  <TableColumn fx:id="PartInventoryCol" prefWidth="101.0" text="Inventory Level" />
+                  <TableColumn fx:id="PartPriceCol" prefWidth="111.0" text="Price/Cost Per Unit" />
+              </columns>
+            </TableView>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button id="AddPartButton" fx:id="AddPart" mnemonicParsing="false" onAction="#OnActionCreatePart" text="Add" />
+                  <Button id="ModifyPartButton" fx:id="ModifyPart" mnemonicParsing="false" onAction="#OnActionModifyPart" text="Modify" />
+                  <Button id="DeletePartButton" fx:id="DeletePart" mnemonicParsing="false" onAction="#OnActionDeletePart" text="Delete" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <StackPane layoutX="38.0" layoutY="15.0" maxWidth="-Infinity" minHeight="8.0" minWidth="337.0" prefHeight="44.0" prefWidth="337.0">
+         <children>
+            <TextField fx:id="searchPartTxt" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#PartSearchTextEmpty" prefHeight="29.0" prefWidth="155.0" StackPane.alignment="CENTER_LEFT" />
+            <Button fx:id="SearchByPart" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#OnActionSearchPart" prefHeight="26.0" prefWidth="170.0" text="Search By Part ID or Name" StackPane.alignment="CENTER_RIGHT" />
+         </children>
+      </StackPane>
+      <VBox layoutX="400.0" layoutY="67.0" prefHeight="465.0" prefWidth="375.0">
+         <children>
+            <TableView fx:id="ProductTableView" minWidth="-Infinity" prefHeight="226.0" prefWidth="381.0">
+               <columns>
+                  <TableColumn fx:id="ProductIDCol" prefWidth="73.0" text="Product ID" />
+                  <TableColumn fx:id="ProductNameCol" prefWidth="97.0" text="Product Name" />
+                  <TableColumn fx:id="ProductInvCol" prefWidth="95.0" text="Inventory Level" />
+                  <TableColumn fx:id="ProductCostCol" prefWidth="115.0" text="Price/Cost Per Unit" />
+               </columns>
+            </TableView>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button id="AddPartButton" fx:id="AddProduct" mnemonicParsing="false" onAction="#OnActionCreateProduct" text="Add" />
+                  <Button id="ModifyPartButton" fx:id="ModifyProduct" mnemonicParsing="false" onAction="#OnActionModifyProduct" text="Modify" />
+                  <Button id="DeletePartButton" fx:id="DeleteProduct" mnemonicParsing="false" onAction="#OnActionDeleteProduct" text="Delete" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="exitMainMenu" mnemonicParsing="false" onAction="#OnActionExit" prefHeight="28.0" prefWidth="109.0" text="Exit" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <StackPane layoutX="428.0" layoutY="15.0" maxWidth="-Infinity" minHeight="8.0" minWidth="337.0" prefHeight="44.0" prefWidth="337.0">
+         <children>
+            <TextField fx:id="SearchProductTxt" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#ProductSearchTextEmpty" prefHeight="29.0" prefWidth="140.0" StackPane.alignment="CENTER_LEFT" />
+            <Button fx:id="SearchProductButton" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#OnActionSearchProduct" prefHeight="26.0" prefWidth="190.0" text="Search By Product ID or Name" StackPane.alignment="CENTER_RIGHT" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

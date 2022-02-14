@@ -1,8 +1,8 @@
 # InventoryApplication
-JavaFX application with non persistent data which allows users to create, read, update, and delete products and parts to an inventory system. If any products have related parts, they will not be able to be deleted.
+JavaFX application with non persistent data which allows users to create, read, update, and delete products and outsourced/in-house parts to an inventory system. If any products have related parts, they will not be able to be deleted. Users will also be able to search for parts and products.
 
 
-Full Task requirement: 
+Full Task requirements: 
 I.  User Interface
 A.  Create a JavaFX application with a graphical user interface (GUI) based on the attached “Software 1 GUI Mock-Up.” You may use JavaFX with or without FXML to create your GUI, or you may use Scene Builder to create your FXML file; use of Swing is not permitted. The user interface (UI) should closely match the organization of the GUI layout and contain all UI components (buttons, text fields, etc.) in each of the following GUI mock-up forms:
 1.  Main form
@@ -11,13 +11,11 @@ A.  Create a JavaFX application with a graphical user interface (GUI) based on t
 4.  Add Product form
 5.  Modify Product form
 
-Note: You may use one FXML file for forms with an identical UI component structure. You may also use a single window that can be switched to a different menu, or a new window can be launched for each form. As of JDK 11, JavaFX is no longer included in the JDK API but is available as an SDK or module.
 
 B.  Provide Javadoc comments for each class member throughout the code, and include a detailed description of the following in your comments:
 • a logical or runtime error that you corrected in the code and how it was corrected
 • a future enhancement that would extend the functionality of the application if it were to be updated
 
-Note: For these comments to accurately export to the Javadoc comments, please add the logical and runtime error comments in the method header declaration comments where the error that was corrected occurred, and include the future enhancement comments in the comments of the main class. Please start these comments with “RUNTIME ERROR” or “FUTURE ENHANCEMENT” as applicable.
 
 II.  Application
 C.  Create classes with data and logic that map to the UML class diagram and include the supplied Part class provided in the attached “Part.java.” Do not alter the provided class. Include all the classes and members as shown in the UML diagram. Your code should demonstrate the following:
@@ -33,6 +31,7 @@ D.  Add the following functionalities to the Main form:
 •   The Delete button under the Parts TableView deletes the selected part from the Parts TableView or displays a descriptive error message in the UI or in a dialog box if a part is not deleted.
 •   When the user searches for parts by ID or name (partial or full name) using the text field, the application displays matching results in the Parts TableView. (Including a search button is optional.) If the part or parts are found, the application highlights a single part or filters multiple parts. If the part is not found, the application displays an error message in the UI or in a dialog box.
 •   If the search field is set to empty, the table should be repopulated with all available parts.
+
 2.  The Products pane
 •   The Add button under the Products TableView opens the Add Product form.
 •   The Modify button under the Products TableView opens the Modify Product form.
